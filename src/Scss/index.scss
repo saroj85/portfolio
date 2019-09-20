@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap');
+
+
+
+$first_color : #2c3e50;
+$second_color: #37bc9c;
+$white : #fff;
+$black : #000;
+
+body {
+    margin: 0px;
+    padding: 0px;
+    // background: #000;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+.heading{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.constainer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.header {
+    background: $first_color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    height: 80px;
+    .logo {
+        color: $white;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 600
+    }
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+    li {
+        margin: 0px 10px;
+
+        a {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 10px;
+            display: block;
+            text-transform: uppercase;
+            border-radius: 3px;
+            &:hover{
+                text-decoration: none;
+                background: $second_color;
+
+            }
+        }
+
+
+    }
+}
+}
+
+
+// scss for hero banner
+
+.hero{
+    width: 100%;
+    background: $second_color;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .sm_intro_img{
+        max-width: 250px;
+        border-radius: 50%;
+    }
+    h1{
+        font-size: 45px;
+        font-weight: bold;
+        margin: 10px 0px;
+        color: $white;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 500;
+        color: $white;
+        margin: 10px 0px;
+    }
+
+}
+
+
+// protfolio_wapper 
+
+.protfolio_wapper{
+    width: 100%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    background: $white;
+
+    .project_flex{
+        width: 100%;
+        display: flex;
+        // align-items: baseline\
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+}
+.modal_overlay{
+    width: 100vw;
+    height:100vh;
+    background-color: #00000036;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// .modal_content{
+    .titel{
+        font-size: 40px;
+        text-align: center;
+        margin: 10px 0px;
+        text-transform: uppercase;
+        color: $second_color;
+    }
+    .close{
+        text-align: right;
+        float: right;
+        padding: 10px;
+        font-size: 39px;
+        display: block;
+        color: $second_color;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    .dec{
+        font-size: 14px;
+        font-weight: 500;
+        margin: 10px;
+        color: #000;
+    }
+    .modal_close{
+        width: 165px;
+        height: 50px;
+        border-radius: 30px;
+        margin: auto;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #fff;
+        background: $second_color;
+        border: 0px;
+        outline: none;
+        text-align: center;
+    }
+
+// }
